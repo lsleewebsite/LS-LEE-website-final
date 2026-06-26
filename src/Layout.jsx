@@ -30,7 +30,7 @@ export default function Layout({ currentPageName, children }) {
           alignItems: 'center', height: isMobile ? '70px' : '110px'
         }}>
           <Link to="/Home" style={{ textDecoration: 'none' }}>
-            <img src="/LS-LEE-TECH-1/logo.png" alt="LS Lee Technology"
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="LS Lee Technology"
               style={{ height: isMobile ? '50px' : '80px', width: 'auto', marginLeft: isMobile ? '0' : '-25px' }} />
           </Link>
 
@@ -131,7 +131,7 @@ export default function Layout({ currentPageName, children }) {
           gap: 0, borderBottom: '2px solid #0A1628'
         }}>
           <div style={{ padding: isMobile ? '32px 20px' : '48px 32px', borderRight: '2px solid #0A1628', gridColumn: isMobile ? '1 / -1' : 'auto' }}>
-            <img src="/LS-LEE-TECH-1/logo.png" alt="LS Lee Technology" style={{ height: '50px', width: 'auto' }} />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="LS Lee Technology" style={{ height: '50px', width: 'auto' }} />
             <p style={{ fontSize: '13px', color: '#5B6573', lineHeight: 1.6, margin: '12px 0 0' }}>
               Mechanical engineering contractor serving Singapore's gas and process industries since 2003.
             </p>
